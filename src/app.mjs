@@ -15,7 +15,6 @@ app.use(express.urlencoded({ extended: true }))
 // routes
 app.get("/api/v1/health", healthCheck)
 
-
 // Error-handling middleware
 app.use(errorHandler);
 export { app };
