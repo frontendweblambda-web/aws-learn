@@ -1,0 +1,17 @@
+### Get user
+GET http://localhost:3001/api/v1/user/91663769-aaa4-494f-a556-8d250aa4f12d?createdAt=2025-10-07T07:01:24.915Z
+
+
+### Get users
+GET http://localhost:3001/api/v1/user
+
+### Create user
+POST http://localhost:3001/api/v1/user
+Content-Type: application/json
+
+{
+    "name":"Pradeep Kumar",
+    "email":"k.pradeep@gmail.com",
+    "password":"Admin$123@",
+    "mobile":"7291893484"
+}

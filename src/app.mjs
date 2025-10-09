@@ -3,6 +3,7 @@ import "dotenv/config";
 import express from 'express';
 import { errorHandler } from './middleware/error-handler.mjs';
 import { healthCheck } from './middleware/health-check.mjs';
+import { userRoute } from './routes/user.mjs';
 
 // app instance
 const app = express();
@@ -14,7 +15,7 @@ app.use(express.urlencoded({ extended: true }))
 
 // routes
 app.get("/api/v1/health", healthCheck)
-
+app.use("/api/v1/user", userRoute)
 // Error-handling middleware
 app.use(errorHandler);
 export { app };

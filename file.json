@@ -1,0 +1,8 @@
+{
+  "Statement": "SELECT * FROM SocialApp WHERE active=?",
+  "Parameters": [
+    {
+      "BOOL": true
+    }
+  ]
+}
